@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" media="all" href="css/pasteleria.css" />
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.png" alt="Pasteleria">
+    <h1>Pastelería MYCAKE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pedido.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="banner-wrapper">
+      <picture>
+        <source type="image/webp" media="(max-width: 600px)" srcset="images/banner/01.webp">
+        <source media="(max-width: 600px)" srcset="images/banner/01.png">
+        <img src="images/banner/01.png" alt="Banner">
+      </picture>
+    </div>
+
+
+    <h3>Stock Sabores:</h3>
+    <ul>
+      <li>
+        <span>
+          Sabor Vainilla:
+        </span>
+        <strong>3</strong>
+      </li>
+      <li>
+        <span>
+          Sabor Chocolate:
+        </span>
+        <strong>2</strong>
+      </li>
+      <li>
+        <span>
+          Sabor Fresa:
+        </span>
+        <strong>5</strong>
+      </li>
+    </ul>
+
+    <h3>Stock Adornos:</h3>
+    <ul>
+      <li><span>Vela Magica:</span><strong>3</strong></li>
+      <li><span>Vela Magica Humo:</span><strong>2</strong></li>
+      <li><span>Vela Plateada:</span><strong>4</strong></li>
+      <li><span>Vela Rosada:</span><strong>1</strong></li>
+      <li><span>Velas de colores:</span><strong>0</strong></li>
+      <li><span>Vela dorada:</span><strong>2</strong></li>
+      <li><span>Vela cobre:</span><strong>2</strong></li>
+      <li><span>Unicornios:</span><strong>1</strong></li>
+      <li><span>Toppers Happy Birthday:</span><strong>2</strong></li>
+      <li><span>Adornos Diamante:</span><strong>6</strong></li>
+
+
+      <h3>Lista de pedidos:</h3>
+      <table>
+        <thead>
+
+          <tr>
+
+            <th scope="col">Numero de pedido</th>
+            <th scope="col">Nombre del cliente</th>
+            <th scope="col">Telefono</th>
+            <th scope="col">Correo Electrónico</th>
+            <th scope="col">Descripción</th>
+            <th scope="col">Sabores</th>
+            <th scope="col">Adornos</th>
+            <th scope="col">Total</th>
+            <th scope="col">Estado del pedido</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td>01</td>
+            <td>Lorem ipsum</td>
+            <td>(555) 555-5555</td>
+            <td>Lorem_ipsum@lorem.ipsum</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur minus fugiat doloremque eum.</td>
+            <td>
+              <ol>
+                <li>Fresa</li>
+                <li>Chocolate</li>
+                <li>Vainilla</li>
+              </ol>
+            </td>
+            <td>
+              <ol>
+                <li>Vela Magica</li>
+                <li>Vela Dorada</li>
+                <li>Unicornios</li>
+              </ol>
+            </td>
+            <td>555</td>
+            <td>
+              <select name="estado" id="estado">
+                <option value="recibido">Recibido</option>
+                <option value="finalizado">Finalizado</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+
+
+
+
+  </main>
+
+  <footer>
+    <div id="address">
+      <div itemscope="" itemtype="https://schema.org/LegalService" class="slocation contactus">
+        <div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+          <div itemprop="streetAddress">ABC #555</div> <span itemprop="addressLocality">ABC</span>, <span itemprop="addressRegion">ABC</span> <span itemprop="postalCode">55555</span> <span itemprop="addressCountry"></span>
+        </div>
+        <span class="contacts"> <span>Phone: <span itemprop="telephone">(555) 555-5555</span> </span> </span>
+        <span class="time"> <span>Horarios: <span>Lunes - Sabado</span> 9:00am - 4:00pm</span> </span>
+      </div>
+    </div>
+    <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+  </footer>
+</body>
+<script src="js/site.js"></script>
+
+</html>

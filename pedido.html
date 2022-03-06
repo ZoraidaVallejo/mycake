@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastelería</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" media="all" href="css/pasteleria.css" />
+</head>
+
+<body onLoad="myOnLoad()">
+  <header>
+    <img src="images/logo.png" alt="Pasteleria">
+    <h1>Pastelería MYCAKE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="pedido.html">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <div class="banner-wrapper">
+      <picture>
+        <source type="image/webp" media="(max-width: 600px)" srcset="images/banner/01.webp">
+        <source media="(max-width: 600px)" srcset="images/banner/01.png">
+        <img src="images/banner/01.png" alt="Banner">
+      </picture>
+    </div>
+
+    <h2>Realiza tu pedido</h2>
+
+    <h3>Elige uno o más sabores:</h3>
+    <div class="seccion-sabores">
+      <ul class="wrapper">
+        <li>
+          <div class="ilustration">
+            <img src="images/sabores/chocolate.png" alt="Sabor Chocolate">
+          </div>
+          <div class="information">
+            <strong class="sabor">Chocolate</strong>
+            <span class="precio">Precio: <span>$100</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/sabores/vainilla.png" alt="Sabor vainilla">
+          </div>
+          <div class="information">
+            <strong class="sabor">Vainilla</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/sabores/fresa.png" alt="Sabor Fresa">
+          </div>
+          <div class="information">
+            <strong class="sabor">Fresa</strong>
+            <span class="precio">Precio: <span>$130</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+      </ul>
+      <select name="sabores">
+        <option>Seleccione un sabor</option>
+      </select>
+
+      <span>Subtotal: <strong>$</strong></span>
+    </div>
+    <h3>Elige uno o más adornos:</h3>
+    <div class="seccion-adornos">
+      <ul class="wrapper">
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/01.png" alt="Vela Magica" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Vela Magica</strong>
+            <span class="precio">Precio: <span>$100</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/02.png" alt="Vela Magica Humo" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Vela Magica Humo</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/03.png" alt="Vela Plateada" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Vela Plateada</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/04.png" alt="Vela Rosada" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Vela Rosada</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/05.png" alt="Velas de colores" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Velas de colores</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/06.png" alt="Vela dorada" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Vela dorada</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/07.png" alt="Vela cobre" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Vela cobre</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/08.png" alt="Unicornios" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Unicornios</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/09.png" alt="Toppers Happy Birthday" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Toppers Happy Birthday</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+        <li>
+          <div class="ilustration">
+            <img src="images/adornos/10.png" alt="Adornos Diamante" width="150" height="150">
+          </div>
+          <div class="information">
+            <strong class="tipo">Adornos Diamante</strong>
+            <span class="precio">Precio: <span>$150</span></span>
+            <input type="checkbox" name="select">
+          </div>
+        </li>
+      </ul>
+      <span>Subtotal: <strong>$</strong></span>
+    </div>
+
+    <h3>Completa tu pedido con la siguiente inforación:</h3>
+    <form>
+      <span class="fld">
+        <label for="name">Nombre:*</label>
+        <input type="text" name="name" id="name" title="Nombre" placeholder="Nombre:*" required="">
+      </span>
+      <span class="fld">
+        <label for="telefono">Telefono:*</label>
+        <input type="text" name="telefono" id="telefono" title="Telefono" placeholder="Telefono:*" required="">
+      </span>
+      <span class="fld">
+        <label for="mail">Correo Electrónico:*</label>
+        <input type="text" name="mail" id="mail" title="Correo Electronico" placeholder="Correo Electronico:*" required="">
+      </span>
+      <span class="fld">
+        <label for="descripcion">Descripción:</label>
+        <textarea name="descripcion" id="descripcion" title="Descripción" rows="5" cols="20" placeholder="Descripción:"></textarea>
+      </span>
+      <span class="submit">
+        <button type="submit" name="submitbtn">COMPLETAR PEDIDO</button> </span>
+    </form>
+
+
+  </main>
+
+  <footer>
+    <div id="address">
+      <div itemscope="" itemtype="https://schema.org/LegalService" class="slocation contactus">
+        <div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
+          <div itemprop="streetAddress">ABC #555</div> <span itemprop="addressLocality">ABC</span>, <span itemprop="addressRegion">ABC</span> <span itemprop="postalCode">55555</span> <span itemprop="addressCountry"></span>
+        </div>
+        <span class="contacts"> <span>Phone: <span itemprop="telephone">(555) 555-5555</span> </span> </span>
+        <span class="time"> <span>Horarios: <span>Lunes - Sabado</span> 9:00am - 4:00pm</span> </span>
+      </div>
+    </div>
+    <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+  </footer>
+</body>
+<script src="js/site.js"></script>
+
+</html>
